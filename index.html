@@ -20,10 +20,6 @@
                 </div>
                 <ul class="desktop-menu">
                     <li><a href="#hero">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#expertise">Expertise</a></li>
-                    <li><a href="#team-section">Team</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="burger-menu">
@@ -96,7 +92,7 @@
                 <!-- Right column: Headshot and AWS Partner logo -->
                 <div class="hero-image-column">
                     <div class="headshot-container">
-                        <img src="SOUHAILBGOR.png" alt="Souhail Elaissaoui" class="headshot-image">
+                        <img src="souhailcol.png" alt="Souhail Elaissaoui" class="headshot-image">
                     </div>
 
                 </div>
@@ -104,311 +100,15 @@
             
             <!-- Bottom Navigation with AWS Partner Logo -->
             <div class="hero-bottom">
-                <a href="#use-cases" class="cta-button secondary">Get Started <i class="fas fa-angle-down"></i></a>
+                <a href="#contact" class="cta-button secondary">Get Started <i class="fas fa-angle-down"></i></a>
                 <img src="aws-partner-logo.png" alt="AWS Partner" class="aws-partner-logo">
-            </div>
-        </div>
-    </section>
-
-    <section id="demo-section" class="demo-section">
-        <div class="container">
-            <h2 class="section-title">Démonstration</h2>
-            <div class="logo-container-demo">
-                
-                <p class="centered-text">Analysez le compte rendu de pharmacogénétique de votre patient et obtenez les recommendations de traitement.</p>
-            </div>
-            <div class="demo-container part-1" id="demoPart1">
-                <div class="pdf-upload-area">
-                    <div class="mock-pdf" id="mockPdf">
-                        <i class="fas fa-file-pdf"></i>
-                        <span>Résultats Pharmacogénétique - Patient 123</span>
-                        <img src="sample-report.png" alt="Sample Report Preview" class="pdf-preview">
-                    </div>
-                    <div class="medication-selector">
-                        <h3>Sélectionnez la classe de médicament</h3>
-                        <div class="medication-buttons">
-                            <button class="med-button" data-value="antidepresseur">Antidépresseur</button>
-                            <button class="med-button" data-value="antipsychotique">Antipsychotique</button>
-                            <button class="med-button" data-value="regulateur">Régulateur de l'humeur</button>
-                        </div>
-                        <button class="analyze-button" id="analyzeButton" disabled>
-                            Obtenir les recommandations
-                            <i class="fas fa-arrow-right"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="demo-container part-2" id="demoPart2" style="display: none;">
-                <div class="recommendations">
-                    <h2>Patient 123 - Recommandations Médicamenteuses</h2>
-                    <div class="recommendations-grid" id="recommendationsGrid">
-                        <!-- Les recommandations seront injectées dynamiquement via JavaScript -->
-                    </div>
-                    <button class="new-analysis-button" id="newAnalysisButton">
-                        <i class="fas fa-redo"></i>
-                        Nouvelle analyse
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="key-figures" class="key-figures">
-        <div class="container">
-            <h2 class="section-title">Les Chiffres Clés</h2>
-            <div class="figures-grid">
-                
-                    <div class="figure-card">
-                        <i class="fas fa-users figure-icon"></i>
-                        <p class="figure-stat">1 Européen sur 4 souffrira de problèmes de santé mentale au cours de sa vie</p>
-                        <div class="expanded-content">
-                            <h3>Ministère de la santé</h3>
-                            <p>La prévention en santé mentale</p>
-                            <a href="https://www.sante.fr/la-prevention-en-sante-mentale" target="_blank" class="read-more-link">
-                                <i class="fas fa-external-link-alt"></i> Lire plus
-                            </a>
-                        </div>
-                    </div>
-                    <div class="figure-card">
-                        <i class="fas fa-chart-line figure-icon"></i>
-                        <p class="figure-stat">Près de 8,5 millions de Français ont souffert de dépression en 2021</p>
-                        <div class="expanded-content">
-                            <h3>Santé publique France</h3>
-                            <p>Prévalence des épisodes dépressifs en France chez les 18-85 ans en 2021</p>
-                            <a href="https://www.santepubliquefrance.fr/maladies-et-traumatismes/sante-mentale/depression-et-anxiete/documents/article/prevalence-des-episodes-depressifs-en-france-chez-les-18-85-ans-resultats-du-barometre-sante-2021" target="_blank">
-                                <i class="fas fa-external-link-alt"></i> Lire plus
-                            </a>
-                        </div>
-                    </div>
-                    <div class="figure-card">
-                        <i class="fas fa-euro-sign figure-icon"></i>
-                        <p class="figure-stat">19 milliards d'euros de coût en santé mentale, 1ᵉ poste de dépense du régime général de l'assurance maladie en France</p>
-                        <div class="expanded-content">
-                            <h3>Agence Régionale de Santé</h3>
-                            <p>Santé mentale et enjeux</p>
-                            <a href="https://www.paca.ars.sante.fr/sante-mentale-definition-et-enjeux" target="_blank">
-                                <i class="fas fa-external-link-alt"></i> Lire plus
-                            </a>
-                        </div>
-                    </div>
-                    <div class="figure-card">
-                        <i class="fas fa-pills figure-icon"></i>
-                        <p class="figure-stat">Moins de 50% des patients souffrant de dépression répondent positivement au traitement antidépresseur de première intention</p>
-                        <div class="expanded-content">
-                            <h3>American Journal of Psychiatry</h3>
-                            <p>Étude STAR*D:  patients dépressifs nécessitant plusieurs étapes de traitement</p>
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/17074942/" target="_blank">
-                                <i class="fas fa-external-link-alt"></i> Lire plus
-                            </a>
-                        </div>
-                    </div>
-                    <div class="figure-card">
-                        <i class="fas fa-brain figure-icon"></i>
-                        <p class="figure-stat">Plus de 60% des patients atteints de schizophrénie ne répondent pas au traitement de premier intention</p>
-                        <div class="expanded-content">
-                            <h3>Schizophrenia Bulletin</h3>
-                            <p>Analyse de la non-réponse aux antipsychotiques chez les patients schizophrènes</p>
-                            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6483567/" target="_blank">
-                                <i class="fas fa-external-link-alt"></i> Lire plus
-                            </a>
-                        </div>
-                    </div>
-                
-            </div>
-        </div>
-    </section>
-
-    <section id="advantages" class="advantages dark-section">
-        <div class="container">
-            <h2 class="section-title">Avantages de la pharmacogénétique</h2>
-            <div class="advantage-grid">
-                <div class="advantage-card" data-aos="fade-up">
-                    <div class="advantage-icon">
-                        <i class="fas fa-bullseye"></i>
-                    </div>
-                    <h3 class="advantage-title">Précision accrue des traitements</h3>
-                    <a href="whitepaper.html#traitements" class="advantage-link">
-                        <span>La pharmacogénétique permet d'adapter les traitements à chaque patient pour une efficacité optimale.</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-                
-                <div class="advantage-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="advantage-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3 class="advantage-title">Amélioration Plus Rapide des Symptômes</h3>
-                    <a href="whitepaper.html#traitements" class="advantage-link">
-                        <span>En ciblant le bon médicament dès le départ, les patients ressentent une amélioration plus rapide.</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <div class="advantage-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="advantage-icon">
-                        <i class="fas fa-shield-virus"></i>
-                    </div>
-                    <h3 class="advantage-title">Effets Secondaires Réduits</h3>
-                    <a href="whitepaper.html#effets" class="advantage-link">
-                        <span>En évitant les médicaments mal tolérés, les patients subissent moins d'effets indésirables.</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <div class="advantage-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="advantage-icon">
-                        <i class="fas fa-user-check"></i>
-                    </div>
-                    <h3 class="advantage-title">Augmentation de la confiance du patient</h3>
-                    <a href="whitepaper.html#effets" class="advantage-link">
-                        <span>Les patients sont plus confiants et observants lorsque le traitement est personnalisé.</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <div class="advantage-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="advantage-icon">
-                        <i class="fas fa-coins"></i>
-                    </div>
-                    <h3 class="advantage-title">Réduction des coûts de santé</h3>
-                    <a href="whitepaper.html#economie" class="advantage-link">
-                        <span>En optimisant les traitements, la pharmacogénétique permet de réduire les coûts de santé à long terme.</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="white-image-section" class="white-image-section">
-        <div class="container">
-            <h2 class="section-title">Détails Techniques</h2>
-            <img src="technical1.png" alt="Illustration" class="full-width-image">
-        </div>
-    </section>
-
-    <section id="team-section" class="team-section">
-        <div class="container">
-            <h2 class="section-title">L'équipe</h2>
-            <div class="team-grid">
-                <div class="team-member">
-                    <div class="profile-image">
-                        <img src="souhail.png" alt="Founder 2">
-                    </div>
-                    <h3>Souhail Elaissaoui</h3>
-                    <p class="title">Co-fondateur & Tech Lead</p>
-                    <p class="bio">Diplômé en Bio-Ingénierie (EPFL), Intelligence Artificielle (École Polytechnique) et Management (HEC Paris), Souhail a acquis une expertise unique en IA et cloud computing auprès des leaders tech mondiaux. Il dirige le développement technique d'Adaptogene pour créer notre solution innovante en pharmacogénétique.</p>
-                    <a href="https://linkedin.com" class="linkedin-link" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="bibliography" class="bibliography">
-        <div class="container">
-            <h2 class="section-title">Science et Références</h2>
-            
-            <!-- Simple Whitepaper Link -->
-            <div class="whitepaper-highlight">
-                <h3><a href="whitepaper.html" class="whitepaper-link">
-                    <i class="fas fa-file-pdf"></i> Lire notre whitepaper
-                </a></h3>
-            </div>
-
-            <div class="references-grid">
-                <div class="reference-card">
-                    <div class="reference-icon">
-                        <i class="fas fa-microscope"></i>
-                    </div>
-                    <h3>Pharmacogénétique et Dépression</h3>
-                    <p class="reference-preview">M. Bunka et Al, 2023</p>
-                    <div class="reference-details">
-                        <p>Méta-analyse traitement guidé par la pharmacogénétique dans la dépression majeure</p>
-                        <a href="https://pubmed.ncbi.nlm.nih.gov/36780865/" target="_blank">
-                            <i class="fas fa-external-link-alt"></i> Lire plus
-                        </a>
-                    </div>
-                </div>
-
-                <div class="reference-card">
-                    <div class="reference-icon">
-                        <i class="fas fa-chart-bar"></i>
-                    </div>
-                    <h3>Rémission des Symptômes Dépressifs</h3>
-                    <p class="reference-preview">L. Brown et Al, 2022</p>
-                    <div class="reference-details">
-                        <p>Méta-analyse pharmacogénétique dans la symptomatologie dépressive</p>
-                        <a href="https://pubmed.ncbi.nlm.nih.gov/36111494/" target="_blank">
-                            <i class="fas fa-external-link-alt"></i> Lire plus
-                        </a>
-                    </div>
-                </div>
-
-                <div class="reference-card">
-                    <div class="reference-icon">
-                        <i class="fas fa-dna"></i>
-                    </div>
-                    <h3>Troubles Mentaux Courants</h3>
-                    <p class="reference-preview">J. Santella et Al, 2024</p>
-                    <div class="reference-details">
-                        <p>Méta-analyse, pharmacogénétique dans les troubles mentaux courants (dépression, trouble anxieux)</p>
-                        <a href="https://pubmed.ncbi.nlm.nih.gov/39265864/" target="_blank">
-                            <i class="fas fa-external-link-alt"></i> Lire plus
-                        </a>
-                    </div>
-                </div>
-
-                <div class="reference-card">
-                    <div class="reference-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>Schizophrénie</h3>
-                    <p class="reference-preview">Z. Kang et Al, 2023</p>
-                    <div class="reference-details">
-                        <p>Étude clinique, traitement guidé par la pharmacogénétique dans la schizophrénie</p>
-                        <a href="https://pubmed.ncbi.nlm.nih.gov/37801319/" target="_blank">
-                            <i class="fas fa-external-link-alt"></i> Lire plus
-                        </a>
-                    </div>
-                </div>
-
-                <div class="reference-card">
-                    <div class="reference-icon">
-                        <i class="fas fa-coins"></i>
-                    </div>
-                    <h3>Analyse Médico-économique</h3>
-                    <p class="reference-preview">S. Morris et Al, 2022</p>
-                    <div class="reference-details">
-                        <p>Méta-analyse médico-économique sur l'implémentation de la pharmacogénétique</p>
-                        <a href="https://pubmed.ncbi.nlm.nih.gov/36149409/" target="_blank">
-                            <i class="fas fa-external-link-alt"></i> Lire plus
-                        </a>
-                    </div>
-                </div>
-
-                <div class="reference-card">
-                    <div class="reference-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Coût-efficacité</h3>
-                    <p class="reference-preview">S. Ghanbarian et Al, 2023</p>
-                    <div class="reference-details">
-                        <p>Etude médico-économique, intérêt de la pharmacogénétique dans la dépression majeure</p>
-                        <a href="https://pubmed.ncbi.nlm.nih.gov/37963621/" target="_blank">
-                            <i class="fas fa-external-link-alt"></i> Lire plus
-                        </a>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
     <footer id="contact">
         <div class="container">
-            <h2 class="section-title light">Contactez-nous</h2>
+            <h2 class="section-title light">Contact me</h2>
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-item">
@@ -417,38 +117,15 @@
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <p>contact@adaptogene.bio</p>
+                        <p>souhail@scaleforce.cloud</p>
                     </div>
                 </div>
             </div>
             <div class="copyright">
-                © 2025 Adaptogene. Tous droits réservés.
+                © 2025 Scale Force Cloud. All rights reserved.
             </div>
         </div>
     </footer>
-
-    <div id="popup-overlay" class="popup-overlay">
-        <div class="popup-content">
-            <span class="close-popup">&times;</span>
-            <h2>Get Started</h2>
-            <form id="popup-form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <select name="inquiry-type" required>
-                    <option value="">Select Inquiry Type</option>
-                    <option value="patient">Patient Inquiry</option>
-                    <option value="professional">Healthcare Professional</option>
-                </select>
-                <textarea name="message" placeholder="How can we help you?" required></textarea>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-    </div>
-
-    <div id="pdf-popup" class="pdf-popup" style="display: none;">
-        <span class="close-popup">&times;</span>
-        <img src="sample-report.png" alt="PDF Preview" class="pdf-preview-full">
-    </div>
 
     <script src="scripts.js"></script>
 </body>

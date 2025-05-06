@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const header = document.querySelector('header');
     const serviceBubbles = document.querySelectorAll('.service-bubble');
     const approachCards = document.querySelectorAll('.approach-card');
+    const featureToggles = document.querySelectorAll('.feature-toggle');
 
     // Video handling
     if (video) {
@@ -132,6 +133,44 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 // Restore original background
                 bubble.style.backgroundColor = 'rgba(255, 255, 255, 0.15)';
+            });
+        });
+    }
+    
+    // Feature Toggle Interaction
+    if (featureToggles.length > 0) {
+        featureToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                // Get parent interactive element
+                const interactiveElement = toggle.closest('.interactive-element');
+                
+                // Toggle active class
+                if (interactiveElement.classList.contains('active')) {
+                    interactiveElement.classList.remove('active');
+                } else {
+                    // Close any other open toggles first
+                    document.querySelectorAll('.interactive-element.active').forEach(el => {
+                        el.classList.remove('active');
+                    });
+                    
+                    // Open this toggle
+                    interactiveElement.classList.add('active');
+                }
+            });
+        });
+    }
+    
+    // Approach Cards hover effects
+    if (approachCards.length > 0) {
+        approachCards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                // Add subtle glow effect
+                card.style.boxShadow = '0 15px 40px rgba(255, 102, 0, 0.15)';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                // Return to original shadow
+                card.style.boxShadow = '';
             });
         });
     }

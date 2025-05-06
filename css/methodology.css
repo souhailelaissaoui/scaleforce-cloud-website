@@ -1,0 +1,278 @@
+/* Methodology Section Styles */
+.methodology-section {
+    background-color: var(--background-dark);
+    color: white;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+}
+
+.methodology-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at bottom left, rgba(255, 102, 0, 0.15), transparent 60%);
+    z-index: 0;
+}
+
+.methodology-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.methodology-section .section-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    position: relative;
+    color: white;
+}
+
+/* Override the orange line after the section title */
+.methodology-section .section-title::after {
+    display: none;
+}
+
+.methodology-section .section-subtitle {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.methodology-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.methodology-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+    height: 100%;
+    border-top: 4px solid var(--secondary-color);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.methodology-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.card-header {
+    padding: 25px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+.stage-number {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.stage-title {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    flex-grow: 1;
+    padding-top: 10px;
+}
+
+.stage-icon {
+    font-size: 2rem;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-image {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    filter: brightness(1.2);
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.stage-description {
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.5;
+}
+
+.stage-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.stage-bullets li {
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.stage-bullets li:before {
+    content: '•';
+    color: var(--secondary-color);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.bullet-highlight {
+    color: white;
+    font-weight: 500;
+}
+
+.expandable-bullet {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.expandable-bullet:hover .bullet-highlight {
+    color: var(--secondary-color);
+}
+
+.bullet-tooltip {
+    display: none;
+    background: rgba(0, 0, 0, 0.7);
+    border-left: 3px solid var(--secondary-color);
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 0 4px 4px 0;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.expandable-bullet:hover .bullet-tooltip {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+.callout-box {
+    background: rgba(255, 102, 0, 0.1);
+    border-left: 3px solid var(--secondary-color);
+    padding: 15px;
+    border-radius: 0 4px 4px 0;
+    margin-top: 15px;
+}
+
+.callout-box p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.9);
+    font-style: italic;
+}
+
+.cta-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 100%;
+    gap: 20px;
+}
+
+.know-more-btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.methodology-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, rgba(255, 102, 0, 0.1), rgba(255, 102, 0, 0.2), rgba(255, 102, 0, 0.1));
+    padding: 20px 40px;
+    border-radius: 12px;
+    width: 100%;
+    gap: 20px;
+}
+
+.methodology-cta h3 {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .cta-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .methodology-cta {
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .methodology-section {
+        width: 100%;
+        padding: 70px 0;
+    }
+}
+
+/* Add this to your media queries section */
+@media (max-width: 1200px) {
+    .methodology-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .methodology-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .methodology-section {
+        padding: 60px 0;
+    }
+    
+    .methodology-section .section-title {
+        font-size: 2rem;
+    }
+    
+    .methodology-section .section-subtitle {
+        font-size: 1rem;
+    }
+}

@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Souhail - Independant AWS Consulting - Scale Force Cloud</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/methodology.css">
+    <link rel="stylesheet" href="css/expertise.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/about-tabs.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
@@ -20,7 +24,9 @@
                 </div>
                 <ul class="desktop-menu">
                     <li><a href="#hero">Home</a></li>
-                    <li><a href="#approach">Our Approach</a></li>
+                    <li><a href="#approach">Approach</a></li>
+                    <li><a href="#methodology">Framework</a></li>
+                    <li><a href="#about">Founder</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="burger-menu">
@@ -46,7 +52,7 @@
                             <div class="service-bubble" data-index="1">
                                 <div class="bubble-content">
                                     <i class="fas fa-cogs"></i>
-                                    <span>MLOps & LLMOps</span>
+                                    <span>MLOps & LLMOps - </br> Open-Source or Proprietary</span>
                                 </div>
                             </div>
                             <div class="service-bubble" data-index="2">
@@ -58,13 +64,13 @@
                             <div class="service-bubble" data-index="3">
                                 <div class="bubble-content">
                                     <i class="fas fa-robot"></i>
-                                    <span>Specialised AI (RAG & MCP)</span>
+                                    <span>Specialised AI Agent </br> (RAG & MCP)</span>
                                 </div>
                             </div>
                             <div class="service-bubble" data-index="4">
                                 <div class="bubble-content">
                                     <i class="fas fa-microchip"></i>
-                                    <span>Model Distillation & Quantization</span>
+                                    <span>LLM Cost Optimization </br> - Model Distillation & Quantization</span>
                                 </div>
                             </div>
                             <div class="service-bubble" data-index="5">
@@ -85,7 +91,7 @@
                             <div class="thought-bubble bubble-3"></div>
                             <div class="thought-bubble bubble-4"></div>
                         </div>
-                        <p>Hi, I'm Souhail. </br>Let's see how I can help your business deploy and leverage AI at scale</p>
+                        <p>I'm Souhail, Lead (Gen)AI Engineer.</br>Let's see how I can help your business deploy and leverage AI at scale</p>
                         <a href="#contact" class="cta-button primary">Discuss Your AI Strategy <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
@@ -95,7 +101,10 @@
                     <div class="headshot-container">
                         <img src="assets/images/souhailcol.png" alt="Souhail Elaissaoui" class="headshot-image">
                     </div>
-
+                    <div class="hero-profile-links">
+                        <a href="https://www.linkedin.com/in/souhailelaissaoui/" class="profile-link linkedin" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="assets/resume.pdf" class="profile-link resume" download><i class="fas fa-file-alt"></i> Resume</a>
+                    </div>
                 </div>
             </div>
             
@@ -106,6 +115,8 @@
             </div>
         </div>
     </section>
+
+
 
     <section id="approach" class="approach-section">
         <div class="container">
@@ -122,14 +133,28 @@
                     </div>
                 </div>
                 
+                <!-- New interactive approach cards with enhanced content -->
                 <div class="approach-cards">
                     <div class="approach-card" data-aos="fade-up">
                         <div class="card-icon">
-                            <i class="fas fa-rocket"></i>
+                            <i class="fas fa-robot"></i>
                         </div>
                         <div class="card-content">
-                            <h3>Accelerated Delivery</h3>
-                            <p>We leverage AI to deploy AI — <span class="highlight-orange">accelerating project delivery by 50%+</span></p>
+                            <h3>AI-Powered Development</h3>
+                            <p>We <span class="highlight-orange">accelerate delivery by 50%+</span> using cutting-edge AI tools</p>
+                            <div class="card-details">
+                                <ul class="feature-list">
+                                    <li><i class="fas fa-check-circle"></i> AI-generated code that meets industry standards</li>
+                                    <li><i class="fas fa-check-circle"></i> Automated code polishing and optimization</li>
+                                    <li><i class="fas fa-check-circle"></i> AI-assisted testing and debugging</li>
+                                </ul>
+                                <div class="interactive-element">
+                                    <button class="feature-toggle"><i class="fas fa-code"></i> See how we code better</button>
+                                    <div class="feature-details">
+                                        <p>Our AI toolchain accelerates development while maintaining quality, enabling us to deliver complex solutions in half the time.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
@@ -138,24 +163,322 @@
                             <i class="fab fa-aws"></i>
                         </div>
                         <div class="card-content">
-                            <h3>AWS Expertise</h3>
-                            <p>We work closely with AWS teams — ensuring <span class="highlight-orange">state-of-the-art deployments</span></p>
+                            <h3>AWS Excellence</h3>
+                            <p>Benefit from <span class="highlight-orange">4+ years AWS expertise</span> and direct AWS team collaboration</p>
+                            <div class="card-details">
+                                <ul class="feature-list">
+                                    <li><i class="fas fa-cloud"></i> AI-powered infrastructure deployment</li>
+                                    <li><i class="fas fa-dollar-sign"></i> Cost-efficient architecture design</li>
+                                    <li><i class="fas fa-shield-alt"></i> State-of-the-art security implementations</li>
+                                </ul>
+                                <div class="interactive-element">
+                                    <button class="feature-toggle"><i class="fas fa-server"></i> Our AWS approach</button>
+                                    <div class="feature-details">
+                                        <p>Working closely with AWS teams gives us insider knowledge on new services and best practices, ensuring optimal and cost-effective deployments.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
                     <div class="approach-card" data-aos="fade-up" data-aos-delay="400">
                         <div class="card-icon">
-                            <i class="fas fa-chart-line"></i>
+                            <i class="fas fa-users"></i>
                         </div>
                         <div class="card-content">
-                            <h3>Proven Results</h3>
-                            <p>We've seen many companies, we know how to deliver <span class="highlight-orange">tailored & high-impact solutions</span> that drive <span class="highlight-orange">innovation</span> and <span class="highlight-orange">measurable growth</span></p>
+                            <h3>Elite Network & Experience</h3>
+                            <p>Access to <span class="highlight-orange">top-tier talent</span> and <span class="highlight-orange">proven methodologies</span></p>
+                            <div class="card-details">
+                                <ul class="feature-list">
+                                    <li><i class="fas fa-university"></i> Selective alumni network from top schools</li>
+                                    <li><i class="fas fa-briefcase"></i> Experience with 15+ diverse clients</li>
+                                    <li><i class="fas fa-exclamation-triangle"></i> Risk mitigation through experience</li>
+                                </ul>
+                                <div class="interactive-element">
+                                    <button class="feature-toggle"><i class="fas fa-trophy"></i> Our track record</button>
+                                    <div class="feature-details">
+                                        <p>From startups to banks and tech giants, we've delivered successful solutions across industries, applying best practices tailored to each unique context.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                </div>
+                
+                <!-- Added a statistics bar to highlight key metrics -->
+                <div class="approach-stats">
+                    <div class="stat-item" data-aos="fade-up">
+                        <div class="stat-number">50%+</div>
+                        <div class="stat-label">Faster Delivery</div>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Client Engagements</div>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="stat-number">4+</div>
+                        <div class="stat-label">Years AWS Experience</div>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Support & Expertise</div>
                     </div>
                 </div>
                 
                 <div class="approach-cta">
                     <a href="#contact" class="cta-button primary">Discover Our Methodology <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="methodology" class="methodology-section">
+        <div class="container">
+            <h2 class="section-title">4-Stages to Scale AI Across Your Organization</h2>
+
+            <div class="methodology-cards">
+                <!-- Stage 1: Setup -->
+                <div class="methodology-card" data-aos="fade-up">
+                    <div class="card-header">
+                        <div class="stage-number">1</div>
+                        <h3 class="stage-title">Setup</h3>
+                        <div class="stage-icon"><img src="assets/images/icons/pawn2.png" alt="Chess Pawn" class="icon-image"></div>
+                    </div>
+                    <div class="card-body">
+                        <p class="stage-description">Define your AI value pool, align your organizational vision, and prioritize opportunities.</p>
+                        <ul class="stage-bullets">
+                            <li><span class="bullet-highlight">Agentic AI Opportunity Mapping</span></li>
+                            <li><span class="bullet-highlight">Strategic Roadmap Definition</span></li>
+                            <li><span class="bullet-highlight">MLOps & LLMOps Platform Readiness</span></li>
+                            <li><span class="bullet-highlight">FinOps & Cost Optimization planning: Serverless, Model Quantization or Distillation</span></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Stage 2: Prove -->
+                <div class="methodology-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-header">
+                        <div class="stage-number">2</div>
+                        <h3 class="stage-title">Prototype</h3>
+                        <div class="stage-icon">🧠</div>
+                    </div>
+                    <div class="card-body">
+                        <p class="stage-description">Develop Proofs of Concept to validate business value.</p>
+                        <ul class="stage-bullets">
+                             <li class="expandable-bullet">
+                                <span class="bullet-highlight">Autonomous AI Agents</span>
+                                <div class="bullet-tooltip">Self-operating AI systems that make decisions and complete complex tasks with minimal supervision.</div>
+                            </li>
+                            <li class="expandable-bullet">
+                                <span class="bullet-highlight">Enterprise Knowledge Copilots</span>
+                                <div class="bullet-tooltip">AI assistants that leverage your company data to provide accurate, contextual responses.</div>
+                            </li>
+                            <li class="expandable-bullet">
+                                <span class="bullet-highlight">System Integration Prototypes</span>
+                                <div class="bullet-tooltip">Connect AI capabilities with your existing business systems through seamless interfaces.</div>
+                            </li>
+                            <li class="expandable-bullet">
+                                <span class="bullet-highlight">Value Measurement Framework</span>
+                                <div class="bullet-tooltip">Quantify AI impact with clear metrics on efficiency, cost savings, and user satisfaction.</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Stage 3: Deploy -->
+                <div class="methodology-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-header">
+                        <div class="stage-number">3</div>
+                        <h3 class="stage-title">Deploy</h3>
+                        <div class="stage-icon">🚀</div>
+                    </div>
+                    <div class="card-body">
+                        <p class="stage-description">Scale proven AI solutions across your organization with intelligent automation.</p>
+                        <ul class="stage-bullets">
+                            <li class="expandable-bullet">
+                                <span class="bullet-highlight">Predictive Analytics Systems</span>
+                                <div class="bullet-tooltip">Forecast trends and identify opportunities across any business function.</div>
+                            </li>
+                            <li class="expandable-bullet">
+                                <span class="bullet-highlight">Process Automation Suite</span>
+                                <div class="bullet-tooltip">Intelligent systems that automate and adapt to changing business conditions.</div>
+                            </li>
+                            <li class="expandable-bullet">
+                                <span class="bullet-highlight">Computer Vision Solutions</span>
+                                <div class="bullet-tooltip">AI vision systems for quality control, security, and object recognition.</div>
+                            </li>
+                            <li class="expandable-bullet">
+                                <span class="bullet-highlight">Decision Intelligence Platform</span>
+                                <div class="bullet-tooltip">Data-driven insights to optimize complex business decisions.</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Stage 4: Invent -->
+                <div class="methodology-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-header">
+                        <div class="stage-number">4</div>
+                        <h3 class="stage-title">Invent</h3>
+                        <div class="stage-icon">💡</div>
+                    </div>
+                    <div class="card-body">
+                        <p class="stage-description">Reimagine the future. Design new AI-native business models, products, and revenue streams.</p>
+                        <div class="callout-box">
+                            <p>To be uncovered through maturity assessment, strategy co-creation, and use case prioritization.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-container">
+                <a href="#hero" class="cta-button secondary know-more-btn">Know more about me <i class="fas fa-arrow-down"></i></a>
+                <div class="methodology-cta">
+                    <h3>Ready to Accelerate Your AI Journey?</h3>
+                    <a href="#contact" class="cta-button primary">Let's Talk Strategy <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="about" class="about-section">
+        <div class="about-background"></div>
+        <div class="container">
+            <div class="about-content-wrapper">
+                <!-- Profile Card -->
+                <div class="profile-card">
+                    <div class="profile-header">
+                        <div class="profile-image-container">
+                            <img src="assets/images/souhailcol.png" alt="Souhail El Aissaoui" class="profile-image">
+                        </div>
+                        <div class="profile-title">
+                            <h2>Souhail El Aissaoui</h2>
+                            <h3>AWS Lead AI/ML Cloud Architect</h3>
+                            <div class="profile-social">
+                                <a href="https://www.linkedin.com/in/souhailelaissaoui/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                                <a href="assets/resume.pdf" download class="social-icon"><i class="fas fa-file-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-tagline">
+                        <p>Bridging the gap between <span class="highlight-text">cutting-edge AI</span> and <span class="highlight-text">real-world business impact</span></p>
+                    </div>
+                </div>
+                
+                <!-- Expertise Tabs -->
+                <div class="expertise-tabs">
+                    <div class="tabs-nav">
+                        <button class="tab-btn active" data-tab="education">Education</button>
+                        <button class="tab-btn" data-tab="expertise">AI/ML Expertise</button>
+                        <button class="tab-btn" data-tab="certifications">AWS Certified</button>
+                    </div>
+                    
+                    <div class="tab-content-container">
+                        <!-- Education Tab -->
+                        <div class="tab-content active" id="education">
+                            <div class="education-logos">
+                                <div class="edu-logo">
+                                    <img src="assets/images/education/epfl.png" alt="EPFL">
+                                    <span>EPFL</span>
+                                </div>
+                                <div class="edu-logo">
+                                    <img src="assets/images/education/hec.png" alt="HEC Paris">
+                                    <span>HEC Paris</span>
+                                </div>
+                                <div class="edu-logo">
+                                    <img src="assets/images/education/x.jpg" alt="École Polytechnique">
+                                    <span>École Polytechnique</span>
+                                </div>
+                            </div>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check-circle"></i> Global network of innovators and industry leaders</li>
+                                <li><i class="fas fa-check-circle"></i> Strong engineering and business acumen</li>
+                                <li><i class="fas fa-check-circle"></i> Interdisciplinary approach to problem-solving</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Expertise Tab -->
+                        <div class="tab-content" id="expertise">
+                            <div class="expertise-highlight">
+                                <div class="aws-partner-logo">
+                                    <img src="assets/images/aws-partner-logo.png" alt="AWS Partner">
+                                </div>
+                                <p class="expertise-summary">I help forward-thinking organizations navigate the AI revolution by designing scalable, production-ready cloud architectures that deliver measurable ROI.</p>
+                            </div>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check-circle"></i> Cloud & AI best practices from 4+ years with AWS as a Lead (Gen)AI Cloud Architect</li>
+                                <li><i class="fas fa-check-circle"></i> Led 15+ projects for Fortune 500 financial institutions</li>
+                                <li><i class="fas fa-check-circle"></i> Expertise spans fintech & healthcare sectors</li>
+                                <li><i class="fas fa-check-circle"></i> Translating complex technical capabilities into strategic business advantages</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Certifications Tab -->
+                        <div class="tab-content" id="certifications">
+                            <div class="certifications-grid">
+                                <div class="certification-item">
+                                    <div class="cert-icon"><i class="fas fa-award"></i></div>
+                                    <div class="cert-name">Data Analytics Specialty</div>
+                                </div>
+                                <div class="certification-item">
+                                    <div class="cert-icon"><i class="fas fa-server"></i></div>
+                                    <div class="cert-name">SysOps Administrator</div>
+                                </div>
+                                <div class="certification-item">
+                                    <div class="cert-icon"><i class="fas fa-code"></i></div>
+                                    <div class="cert-name">Developer</div>
+                                </div>
+                                <div class="certification-item">
+                                    <div class="cert-icon"><i class="fas fa-sitemap"></i></div>
+                                    <div class="cert-name">Solutions Architect</div>
+                                </div>
+                            </div>
+                            <div class="aws-logo-large">
+                                <img src="assets/images/aws.png" alt="AWS">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Core Values -->
+                <div class="core-values">
+                    <div class="value-item">
+                        <div class="value-icon"><i class="fas fa-brain"></i></div>
+                        <div class="value-title">Technical Excellence</div>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon"><i class="fas fa-lightbulb"></i></div>
+                        <div class="value-title">Creative Problem Solving</div>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon"><i class="fas fa-handshake"></i></div>
+                        <div class="value-title">Trusted Partnership</div>
+                    </div>
+                </div>
+                
+                <!-- Client Logos -->
+                <div class="client-logos">
+                    <h3>Worked With</h3>
+                    <p>Publicly referenceable companies I've collaborated with</p>
+                    <div class="logo-slider">
+                        <div class="logo-track">
+                            <div class="logo-item"><img src="assets/images/customers/allianz.png" alt="Allianz"></div>
+                            <div class="logo-item"><img src="assets/images/customers/axa.png" alt="AXA"></div>
+                            <div class="logo-item"><img src="assets/images/customers/natixis.png" alt="Natixis"></div>
+                            <div class="logo-item"><img src="assets/images/customers/natwest.png" alt="NatWest"></div>
+                            <div class="logo-item"><img src="assets/images/customers/mufg.png" alt="MUFG"></div>
+                            <div class="logo-item"><img src="assets/images/customers/ubs.png" alt="UBS"></div>
+                            <div class="logo-item"><img src="assets/images/customers/vaudoise.png" alt="Vaudoise"></div>
+                            <div class="logo-item"><img src="assets/images/customers/oddo.png" alt="Oddo"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CTA Button -->
+                <div class="about-cta">
+                    <a href="#contact" class="cta-button primary pulse-animation">Schedule a Consultation <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -184,5 +507,9 @@
 
     <script src="js/ui-interactions.js"></script>
     <script src="js/form-handlers.js"></script>
+    <script src="js/methodology-interactions.js"></script>
+    <script src="js/expertise-interactions.js"></script>
+    <script src="js/about-interactions.js"></script>
+    <script src="js/expertise-tabs.js"></script>
 </body>
 </html>

@@ -1,13 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Elements
     const video = document.querySelector('.video-background video');
-    const ctaButton = document.querySelector('.hero .cta-button');
+    const ctaButton = document.querySelector('.hero .cta-button.primary');
     const popupOverlay = document.getElementById('popup-overlay');
     const popupContent = document.querySelector('.popup-content');
     const header = document.querySelector('header');
     const demoSection = document.querySelector('#demo-section');
     const footerForm = document.querySelector('footer form');
     const mockPdf = document.getElementById('mockPdf');
+    const serviceBubbles = document.querySelectorAll('.service-bubble');
     
     // Store original popup content only if it exists
     const originalPopupContent = popupContent ? popupContent.innerHTML : '';
@@ -174,6 +175,35 @@ document.addEventListener('DOMContentLoaded', () => {
     // Handle footer form submissions
     if (footerForm) {
         footerForm.addEventListener('submit', (e) => handleFormSubmit(e, footerForm));
+    }
+
+    // Service Bubbles Interaction
+    if (serviceBubbles.length > 0) {
+        serviceBubbles.forEach(bubble => {
+            bubble.addEventListener('mouseenter', () => {
+                // Pause the floating animation on hover
+                bubble.style.animationPlayState = 'paused';
+                
+                // Add a scale effect
+                bubble.style.transform = 'scale(1.1)';
+                bubble.style.zIndex = '10';
+                
+                // Change background opacity slightly
+                bubble.style.backgroundColor = 'rgba(255, 255, 255, 0.25)';
+            });
+            
+            bubble.addEventListener('mouseleave', () => {
+                // Resume the floating animation
+                bubble.style.animationPlayState = 'running';
+                
+                // Remove scale effect
+                bubble.style.transform = '';
+                bubble.style.zIndex = '';
+                
+                // Restore original background
+                bubble.style.backgroundColor = 'rgba(255, 255, 255, 0.15)';
+            });
+        });
     }
 
     // Initial attachment of event listeners

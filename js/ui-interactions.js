@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Elements
     const video = document.querySelector('.video-background video');
-    const ctaButton = document.querySelector('.hero .cta-button.primary');
+    const ctaButtons = document.querySelectorAll('.cta-button.primary');
     const header = document.querySelector('header');
     const serviceBubbles = document.querySelectorAll('.service-bubble');
+    const approachCards = document.querySelectorAll('.approach-card');
 
     // Video handling
     if (video) {
@@ -60,21 +61,51 @@ document.addEventListener('DOMContentLoaded', () => {
                 link.classList.add('active');
             }
         });
+        
+        // Handle approach section animations on scroll
+        handleApproachAnimations();
+        
+        // Header background change on scroll
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
     });
 
     // Event Listeners
-    if (ctaButton) {
-        ctaButton.addEventListener('click', (e) => {
-            e.preventDefault();
-            const contactSection = document.querySelector('#contact');
-            if (contactSection) {
-                contactSection.scrollIntoView({ 
-                    behavior: 'smooth',
-                    block: 'start'
-                });
+    if (ctaButtons.length > 0) {
+        ctaButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                const href = button.getAttribute('href');
+                const targetSection = document.querySelector(href);
+                if (targetSection) {
+                    targetSection.scrollIntoView({ 
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    }
+    
+    // Approach Section Animations
+    function handleApproachAnimations() {
+        const approachElements = document.querySelectorAll('[data-aos]');
+        
+        approachElements.forEach(element => {
+            const rect = element.getBoundingClientRect();
+            const isVisible = (rect.top <= window.innerHeight * 0.75);
+            
+            if (isVisible) {
+                element.classList.add('aos-animate');
             }
         });
     }
+    
+    // Initial check for animations
+    handleApproachAnimations();
 
     // Service Bubbles Interaction
     if (serviceBubbles.length > 0) {

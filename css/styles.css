@@ -104,6 +104,153 @@ footer {
     color: var(--secondary-color);
 }
 
+/* Approach Section Styles */
+.approach-section {
+    background-color: var(--background-light);
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.approach-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top right, rgba(255, 102, 0, 0.05), transparent 60%);
+    z-index: 0;
+}
+
+.approach-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.approach-section .section-title {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    position: relative;
+}
+
+.approach-section .section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: var(--secondary-color);
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+.approach-content {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.approach-intro {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.approach-headline {
+    font-size: 2rem;
+    line-height: 1.4;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: var(--text-color);
+}
+
+.highlight-orange {
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+.approach-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.approach-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-bottom: 4px solid var(--secondary-color);
+}
+
+.approach-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.card-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.approach-cta {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Animation for approach cards */
+[data-aos] {
+    opacity: 0;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+[data-aos="fade-up"] {
+    transform: translateY(30px);
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive adjustments for approach section */
+@media (max-width: 768px) {
+    .approach-section {
+        padding: 70px 0;
+    }
+    
+    .approach-headline {
+        font-size: 1.6rem;
+    }
+    
+    .approach-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Animations */
 @keyframes fadeIn {
     from {

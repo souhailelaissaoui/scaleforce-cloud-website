@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/methodology.css">
     <link rel="stylesheet" href="css/expertise.css">
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/about-tabs.css">
     <link rel="stylesheet" href="css/approach.css">
+    <link rel="stylesheet" href="css/about-redesign.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
@@ -111,7 +110,7 @@
             
             <!-- Bottom Navigation with AWS Partner Logo -->
             <div class="hero-bottom">
-                <a href="#contact" class="cta-button secondary">Get Started <i class="fas fa-angle-down"></i></a>
+                <a href="#approach" class="cta-button secondary">Get Started <i class="fas fa-angle-down"></i></a>
                 <img src="assets/images/aws-partner-logo.png" alt="AWS Partner" class="aws-partner-logo">
             </div>
         </div>
@@ -272,7 +271,7 @@
                     <div class="card-header">
                         <div class="stage-number">2</div>
                         <h3 class="stage-title" style="color: white !important;">Prototype</h3>
-                        <div class="stage-icon">🧠</div>
+                        <div class="stage-icon">🔬</div>
                     </div>
                     <div class="card-body">
                         <p class="stage-description">Develop Proofs of Concept to validate business value.</p>
@@ -356,74 +355,60 @@
 
 
     <section id="about" class="about-section">
-        <div class="about-background"></div>
         <div class="container">
             <div class="about-content-wrapper">
                 <!-- Profile Card -->
                 <div class="profile-card">
-                    <div class="profile-header">
-                        <div class="profile-image-container">
-                            <img src="assets/images/souhailcol.png" alt="Souhail El Aissaoui" class="profile-image">
-                        </div>
+                    <div class="profile-image-container">
+                        <img src="assets/images/souhailcol.png" alt="Souhail El Aissaoui" class="profile-image">
+                    </div>
+                    <div class="profile-details">
                         <div class="profile-title">
                             <h2>Souhail El Aissaoui</h2>
                             <h3>AWS Lead AI/ML Cloud Architect</h3>
-                            <div class="profile-social">
-                                <a href="https://www.linkedin.com/in/souhailelaissaoui/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                                <a href="assets/resume.pdf" download class="social-icon"><i class="fas fa-file-alt"></i></a>
-                            </div>
                         </div>
-                    </div>
-                    <div class="profile-tagline">
-                        <p>Bridging the gap between <span class="highlight-text">cutting-edge AI</span> and <span class="highlight-text">real-world business impact</span></p>
+                        <div class="profile-tagline">
+                            <p>Bridging the gap between <span class="highlight-text">cutting-edge AI</span> and <span class="highlight-text">real-world business impact</span></p>
+                        </div>
+                        <div class="profile-social">
+                            <a href="https://www.linkedin.com/in/souhailelaissaoui/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                            <a href="assets/resume.pdf" download class="social-icon"><i class="fas fa-file-alt"></i></a>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- Expertise Tabs -->
                 <div class="expertise-tabs">
                     <div class="tabs-nav">
-                        <button class="tab-btn active" data-tab="education">Education</button>
-                        <button class="tab-btn" data-tab="expertise">AI/ML Expertise</button>
+                        <button class="tab-btn active" data-tab="education-expertise">AI/ML Education & Experience</button>
                         <button class="tab-btn" data-tab="certifications">AWS Certified</button>
                     </div>
                     
                     <div class="tab-content-container">
-                        <!-- Education Tab -->
-                        <div class="tab-content active" id="education">
+                        <!-- Combined Education & Expertise Tab -->
+                        <div class="tab-content active" id="education-expertise">
                             <div class="education-logos">
                                 <div class="edu-logo">
-                                    <img src="assets/images/education/epfl.png" alt="EPFL">
-                                    <span>EPFL</span>
+                                    <img src="assets/images/education/x.png" alt="École Polytechnique">
                                 </div>
                                 <div class="edu-logo">
                                     <img src="assets/images/education/hec.png" alt="HEC Paris">
-                                    <span>HEC Paris</span>
                                 </div>
                                 <div class="edu-logo">
-                                    <img src="assets/images/education/x.jpg" alt="École Polytechnique">
-                                    <span>École Polytechnique</span>
+                                    <img src="assets/images/education/epfl.png" alt="EPFL">
+                                </div>
+                                <div class="edu-logo">
+                                    <img src="assets/images/education/aws.png" alt="AWS">
+                                </div>
+                                <div class="edu-logo">
+                                    <img src="assets/images/education/rb.png" alt="RB">
                                 </div>
                             </div>
                             <ul class="feature-list">
-                                <li><i class="fas fa-check-circle"></i> Global network of innovators and industry leaders</li>
-                                <li><i class="fas fa-check-circle"></i> Strong engineering and business acumen</li>
-                                <li><i class="fas fa-check-circle"></i> Interdisciplinary approach to problem-solving</li>
-                            </ul>
-                        </div>
-                        
-                        <!-- Expertise Tab -->
-                        <div class="tab-content" id="expertise">
-                            <div class="expertise-highlight">
-                                <div class="aws-partner-logo">
-                                    <img src="assets/images/aws-partner-logo.png" alt="AWS Partner">
-                                </div>
-                                <p class="expertise-summary">I help forward-thinking organizations navigate the AI revolution by designing scalable, production-ready cloud architectures that deliver measurable ROI.</p>
-                            </div>
-                            <ul class="feature-list">
-                                <li><i class="fas fa-check-circle"></i> Cloud & AI best practices from 5+ years with AWS as a Lead (Gen)AI Cloud Architect</li>
-                                <li><i class="fas fa-check-circle"></i> Led 15+ projects for Fortune 500 financial institutions</li>
-                                <li><i class="fas fa-check-circle"></i> Expertise spans fintech & healthcare sectors</li>
-                                <li><i class="fas fa-check-circle"></i> Translating complex technical capabilities into strategic business advantages</li>
+                                <li><i class="fas fa-chart-line"></i> <strong>15+ Fortune 500 projects</strong> with measurable business impact</li>
+                                <li><i class="fas fa-brain"></i> <strong>GenAI specialist</strong> transforming raw data into strategic assets</li>
+                                <li><i class="fas fa-globe"></i> <strong>Cross-industry expertise</strong> in fintech, healthcare & beyond</li>
+                                <li><i class="fas fa-building"></i> <strong>All-size business partner</strong> from startups to SMBs to Fortune 500</li>
                             </ul>
                         </div>
                         
@@ -454,43 +439,40 @@
                     </div>
                 </div>
                 
-                <!-- Core Values -->
-                <div class="core-values">
-                    <div class="value-item">
-                        <div class="value-icon"><i class="fas fa-brain"></i></div>
-                        <div class="value-title">Technical Excellence</div>
-                    </div>
-                    <div class="value-item">
-                        <div class="value-icon"><i class="fas fa-lightbulb"></i></div>
-                        <div class="value-title">Creative Problem Solving</div>
-                    </div>
-                    <div class="value-item">
-                        <div class="value-icon"><i class="fas fa-handshake"></i></div>
-                        <div class="value-title">Trusted Partnership</div>
-                    </div>
-                </div>
-                
-                <!-- Client Logos -->
+                <!-- Client Logos Simple Carousel -->
                 <div class="client-logos">
-                    <h3>Worked With</h3>
-                    <p>Publicly referenceable companies I've collaborated with</p>
+                    <h3>Worked with</h3>
                     <div class="logo-slider">
                         <div class="logo-track">
+                            <!-- Original logos -->
+                            <div class="logo-item"><img src="assets/images/customers/aws.png" alt="AWS"></div>
+                            <div class="logo-item"><img src="assets/images/customers/caa.png" alt="CAA"></div>
                             <div class="logo-item"><img src="assets/images/customers/allianz.png" alt="Allianz"></div>
                             <div class="logo-item"><img src="assets/images/customers/axa.png" alt="AXA"></div>
-                            <div class="logo-item"><img src="assets/images/customers/natixis.png" alt="Natixis"></div>
                             <div class="logo-item"><img src="assets/images/customers/natwest.png" alt="NatWest"></div>
                             <div class="logo-item"><img src="assets/images/customers/mufg.png" alt="MUFG"></div>
                             <div class="logo-item"><img src="assets/images/customers/ubs.png" alt="UBS"></div>
-                            <div class="logo-item"><img src="assets/images/customers/vaudoise.png" alt="Vaudoise"></div>
+                            <div class="logo-item"><img src="assets/images/customers/natixis.png" alt="Natixis"></div>
+                            <div class="logo-item"><img src="assets/images/customers/oddo.png" alt="Oddo"></div>
+                            
+                            <!-- Duplicate logos for infinite scrolling -->
+                            <div class="logo-item"><img src="assets/images/customers/aws.png" alt="AWS"></div>
+                            <div class="logo-item"><img src="assets/images/customers/caa.png" alt="CAA"></div>
+                            <div class="logo-item"><img src="assets/images/customers/allianz.png" alt="Allianz"></div>
+                            <div class="logo-item"><img src="assets/images/customers/axa.png" alt="AXA"></div>
+                            <div class="logo-item"><img src="assets/images/customers/natwest.png" alt="NatWest"></div>
+                            <div class="logo-item"><img src="assets/images/customers/mufg.png" alt="MUFG"></div>
+                            <div class="logo-item"><img src="assets/images/customers/ubs.png" alt="UBS"></div>
+                            <div class="logo-item"><img src="assets/images/customers/natixis.png" alt="Natixis"></div>
                             <div class="logo-item"><img src="assets/images/customers/oddo.png" alt="Oddo"></div>
                         </div>
                     </div>
                 </div>
                 
-                <!-- CTA Button -->
+                <!-- CTA Buttons -->
                 <div class="about-cta">
-                    <a href="#contact" class="cta-button primary pulse-animation">Schedule a Consultation <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contact" class="cta-button secondary">Contact Me <i class="fas fa-envelope"></i></a>
+                    <a href="#contact" class="cta-button primary">Schedule a Consultation <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>

@@ -217,6 +217,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     burgerMenu.classList.remove('active');
                 }
             });
+            
+            // Add delay to menu items for animation
+            const menuItems = mobileMenu.querySelectorAll('li');
+            menuItems.forEach((item, index) => {
+                item.style.animationDelay = `${0.1 + index * 0.05}s`;
+            });
         }
     }
 

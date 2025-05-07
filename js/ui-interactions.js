@@ -78,14 +78,22 @@ document.addEventListener('DOMContentLoaded', () => {
     if (ctaButtons.length > 0) {
         ctaButtons.forEach(button => {
             button.addEventListener('click', (e) => {
-                e.preventDefault();
                 const href = button.getAttribute('href');
-                const targetSection = document.querySelector(href);
-                if (targetSection) {
-                    targetSection.scrollIntoView({ 
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+                
+                // Check if it's an external link (starts with http or https)
+                if (href.startsWith('http') || href.startsWith('https')) {
+                    // Allow default behavior for external links
+                    return true;
+                } else {
+                    // For internal links, handle smooth scrolling
+                    e.preventDefault();
+                    const targetSection = document.querySelector(href);
+                    if (targetSection) {
+                        targetSection.scrollIntoView({ 
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
                 }
             });
         });

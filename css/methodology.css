@@ -96,13 +96,14 @@
     font-size: 1.1rem;
 }
 
-.stage-title {
+.methodology-card .stage-title {
     margin: 0;
     font-size: 1.6rem;
     font-weight: 600;
     text-align: center;
     flex-grow: 1;
     padding-top: 10px;
+    color: white !important;
 }
 
 .stage-icon {

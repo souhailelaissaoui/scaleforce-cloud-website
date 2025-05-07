@@ -130,7 +130,7 @@ footer {
 
 .approach-section .section-title {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     font-size: 2.5rem;
     font-weight: 700;
     position: relative;
@@ -159,10 +159,10 @@ footer {
 }
 
 .approach-headline {
-    font-size: 2rem;
+    font-size: 1.7rem;
     line-height: 1.4;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .highlight {
@@ -178,7 +178,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 .approach-card {
@@ -198,14 +198,27 @@ footer {
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
 }
 
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.card-header h3 {
+    margin: 0;
+    color: var(--text-color);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
 .card-icon {
     font-size: 2rem;
     color: var(--secondary-color);
-    margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70px;
+    min-width: 70px;
     height: 70px;
     background: rgba(255, 102, 0, 0.1);
     border-radius: 50%;
@@ -228,12 +241,19 @@ footer {
     align-items: flex-start;
     gap: 10px;
     font-size: 0.95rem;
+    color: #000000;
+    font-weight: 500;
 }
 
 .feature-list li i {
     color: var(--secondary-color);
     font-size: 0.9rem;
     margin-top: 4px;
+}
+
+.feature-text {
+    color: #000000;
+    font-weight: 400;
 }
 
 .interactive-element {

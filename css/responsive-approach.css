@@ -1,0 +1,92 @@
+/* Simplified Responsive styles for the Approach section */
+
+/* Basic adjustments for larger screens */
+@media screen and (max-width: 1200px) {
+    .approach-headline {
+        font-size: 1.5rem;
+    }
+    
+    .approach-section .section-title {
+        font-size: 2.2rem;
+    }
+    
+    .approach-card .card-header h3 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Breakpoint for small screens (800px and below) */
+@media screen and (max-width: 800px) {
+    /* Layout changes */
+    .approach-cards {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .approach-section {
+        padding: 30px 0;
+    }
+    
+    .approach-headline {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    
+    /* Hide detailed card content */
+    .approach-card .card-details {
+        display: none;
+    }
+    
+    /* Simplify cards to only show title and main paragraph */
+    .approach-card {
+        padding: 12px;
+    }
+    
+    .approach-card .card-header h3 {
+        font-size: 1.1rem;
+    }
+    
+    /* Make stats more compact */
+    .approach-stats {
+        flex-wrap: wrap;
+    }
+    
+    .stat-item {
+        flex: 0 0 50%;
+        padding: 8px 5px;
+    }
+    
+    /* Reorder buttons in CTA section */
+    .approach-cta .cta-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .approach-cta .cta-buttons .primary {
+        order: 1; /* Book appointment button first */
+    }
+    
+    .approach-cta .cta-buttons .secondary {
+        order: 2; /* Discover framework button second */
+    }
+}
+
+/* Even smaller screens */
+@media screen and (max-width: 480px) {
+    .approach-section .section-title {
+        font-size: 1.6rem;
+    }
+    
+    .approach-headline {
+        font-size: 1.1rem;
+    }
+    
+    .approach-stats .stat-number {
+        font-size: 1.2rem;
+    }
+    
+    .approach-stats .stat-label {
+        font-size: 0.7rem;
+    }
+}

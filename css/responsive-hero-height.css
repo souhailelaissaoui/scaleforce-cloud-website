@@ -1,0 +1,110 @@
+/* Height-based responsive styles for the hero section */
+@media screen and (max-height: 800px) {
+    .hero {
+        height: auto;
+        min-height: 100vh;
+    }
+    .hero h1 {
+        margin-top: 0.4rem;
+    }
+    
+    .hero .container {
+        height: auto;
+        min-height: 100vh;
+        padding-top: 80px;
+        padding-bottom: 20px;
+    }
+    
+    .service-bubbles {
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        gap: 2vh;
+    }
+    
+    .hero-grid {
+        margin-top: 2vh;
+    }
+    
+    .hero-description {
+        padding: 1.5em;
+        margin-bottom: 2vh;
+    }
+    
+    .hero-bottom {
+        margin-top: 2vh;
+    }
+}
+
+
+
+@media screen and (max-height: 600px) {
+    .hero h1 {
+        font-size: 1.8rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.3rem;
+    }
+    
+    .hero-tagline {
+        font-size: 1rem;
+        margin-bottom: 0.5vh;
+    }
+    
+    .service-bubbles {
+        margin-top: 0.5vh;
+        margin-bottom: 0.5vh;
+        gap: 1vh;
+    }
+    
+    .service-bubble {
+        transform: scale(0.8);
+    }
+    
+    .hero-grid {
+        gap: 1%;
+        margin-top: 1vh;
+    }
+    
+    .hero-description {
+        padding: 1em;
+        margin-bottom: 1vh;
+    }
+    
+    .hero-description p {
+        font-size: 0.8rem;
+        margin-bottom: 0.3rem;
+    }
+    
+    .cta-button.primary {
+        padding: 8px 16px;
+        font-size: 0.7rem;
+    }
+    
+    .headshot-container {
+        transform: scale(0.8);
+        margin-bottom: 0.2vh;
+        min-width: 100px;
+        min-height: 100px;
+    }
+    
+    .hero-profile-links {
+        margin-top: 0.3vh;
+    }
+    
+    .profile-link {
+        padding: 0.3em 0.8em;
+        font-size: 0.8rem;
+    }
+    
+    .hero-bottom {
+        margin-top: 0.5vh;
+    }
+    
+    .cta-button.secondary {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+    
+    .aws-partner-logo {
+        max-height: 30px;
+    }
+}

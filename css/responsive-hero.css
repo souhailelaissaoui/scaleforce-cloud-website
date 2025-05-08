@@ -40,7 +40,7 @@
     .service-bubble {
         position: relative;
         width: 20vw;
-        aspect-ratio: 1/1;
+        height: 20vw; /* Explicitly set height equal to width instead of using aspect-ratio */
         border-radius: 50%;
         /* other properties remain the same */
     }
@@ -106,11 +106,13 @@
         /* Create a row with exactly 3 bubbles */
         .service-bubble:nth-child(-n+3) {
             width: 27vw; /* Keep consistent width */
+            height: 27vw; /* Ensure height equals width for perfect circles */
         }
         
         /* Create a row with 2 bubbles centered */
         .service-bubble:nth-child(n+4):nth-child(-n+5) {
             width: 27vw; /* Same width as first row */
+            height: 27vw; /* Ensure height equals width for perfect circles */
             /* Add margin to center the 2 bubbles */
             margin-left: 1vw;
             margin-right: 1vw;

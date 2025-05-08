@@ -1,0 +1,141 @@
+/* Responsive burger menu styles */
+@media screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem; /* Changed from rem to vw for viewport-based sizing */
+        margin-bottom: 0.5rem;
+        max-width: 80%; /* Changed from fixed pixels to percentage */
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-top: 3rem; /* Changed from fixed pixels to vh */
+        text-shadow: 0.1vw 0.1vw 0.2vw rgba(0, 0, 0, 0.3); /* Changed from fixed pixels to vw */
+    }
+    
+    
+    
+    .hero-tagline {
+        font-size: 1.2rem; /* Changed from rem to vw */
+        margin-bottom: 0;
+        text-align: center;
+        max-width: 90%; /* Changed from fixed pixels to percentage */
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--light-color);
+        text-shadow: 0.05vw 0.05vw 0.1vw rgba(0, 0, 0, 0.3); /* Changed from fixed pixels to vw */
+        font-weight: 300;
+    }
+
+    .service-bubbles {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3vw;
+        margin-top: 3vh;
+        margin-bottom: 2rem;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .service-bubble {
+        position: relative;
+        width: 20vw;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        /* other properties remain the same */
+    }
+    
+    /* Create a row with exactly 3 bubbles */
+    .service-bubble:nth-child(-n+3) {
+        width: 20vw; /* Keep consistent width */
+    }
+    
+    /* Create a row with 2 bubbles centered */
+    .service-bubble:nth-child(n+4):nth-child(-n+5) {
+        width: 20vw; /* Same width as first row */
+        /* Add margin to center the 2 bubbles */
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+
+    .hero-description p {
+        font-size: 1rem;
+    }
+
+    .cta-button.primary {
+        background-color: var(--secondary-color);
+        border: 2px solid var(--secondary-color);
+        color: white;
+        padding: 10px 24px;
+        font-size: 0.6rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+    .bubble-content i {
+        font-size: 4vw;
+    }
+    .bubble-content span {
+        font-size: 2vw;
+
+    }
+}
+
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.7rem; /* Changed from rem to vw for viewport-based sizing */
+    }
+    
+    
+    
+    .hero-tagline {
+        font-size: 1rem; /* Changed from rem to vw */
+    }
+
+    .bubble-content i {
+        font-size: 1rem;
+    }
+    .bubble-content span {
+        font-size: 0.7rem;
+
+    }
+        /* Create a row with exactly 3 bubbles */
+        .service-bubble:nth-child(-n+3) {
+            width: 27vw; /* Keep consistent width */
+        }
+        
+        /* Create a row with 2 bubbles centered */
+        .service-bubble:nth-child(n+4):nth-child(-n+5) {
+            width: 27vw; /* Same width as first row */
+            /* Add margin to center the 2 bubbles */
+            margin-left: 1vw;
+            margin-right: 1vw;
+        }
+        
+    /* Stack LinkedIn and resume links on top of each other */
+    .hero-profile-links {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        align-items: center;
+    }
+    
+    .hero-profile-links .profile-link {
+        width: 100%;
+        text-align: center;
+    }
+    .hero-bottom .aws-partner-logo {
+        max-width: 35vw; /* Changed from fixed pixels to vw */
+        height: auto;
+    }
+    .cta-button.secondary {
+
+        font-size: 4vw;
+    }
+}
+
+

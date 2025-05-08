@@ -1,0 +1,310 @@
+/* Responsive styles for the About section */
+
+/* Large screens (up to 1200px) */
+@media screen and (max-width: 1200px) {
+    .about-section {
+        height: auto;
+        min-height: 100vh;
+        padding: 60px 0;
+    }
+    
+    .profile-title h2 {
+        font-size: 2rem;
+    }
+    
+    .profile-title h3 {
+        font-size: 1.1rem;
+    }
+    
+    .profile-tagline {
+        font-size: 1.2rem;
+        min-width: 0;
+        white-space: normal;
+    }
+    
+    .expertise-tabs {
+        padding: 20px;
+    }
+}
+
+/* Medium screens (up to 992px) */
+@media screen and (max-width: 992px) {
+    .about-content-wrapper {
+        gap: 20px;
+    }
+    
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .profile-details {
+        text-align: center;
+    }
+    
+    .profile-social {
+        justify-content: center;
+    }
+    
+    .profile-tagline {
+        font-size: 1.1rem;
+    }
+    
+    .tabs-nav {
+        flex-direction: row;
+        overflow-x: auto;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+    }
+    
+    .tab-btn {
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+    
+    .education-logos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .feature-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .certifications-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .logo-slider {
+        margin: 0 auto;
+    }
+    
+    .about-cta {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    .about-cta .cta-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Tablets and small screens (up to 768px) */
+@media screen and (max-width: 768px) {
+    .about-section {
+        padding: 40px 0;
+    }
+    
+    .profile-image-container {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .profile-title h2 {
+        font-size: 1.8rem;
+    }
+    
+    .profile-title h3 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    
+    .profile-tagline {
+        font-size: 1rem;
+    }
+    
+    .expertise-tabs {
+        padding: 15px;
+    }
+    
+    .tab-btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .education-logos {
+        gap: 10px;
+    }
+    
+    .edu-logo {
+        width: 100px;
+    }
+    
+    .edu-logo img {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .feature-list li {
+        font-size: 0.9rem;
+    }
+    
+    .client-logos h3 {
+        font-size: 1.3rem;
+    }
+    
+    .logo-slider {
+        padding: 10px 0;
+    }
+}
+
+/* Mobile phones (up to 576px) */
+@media screen and (max-width: 576px) {
+    .about-section {
+        padding: 30px 0;
+    }
+    
+    .profile-image-container {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .profile-title h2 {
+        font-size: 1.6rem;
+    }
+    
+    .profile-title h3 {
+        font-size: 0.9rem;
+    }
+    
+    .social-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 1rem;
+    }
+    
+    .profile-tagline {
+        font-size: 0.9rem;
+    }
+    
+    .tabs-nav {
+        margin-bottom: 10px;
+    }
+    
+    .tab-btn {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+    
+    .tab-content-container {
+        min-height: auto;
+    }
+    
+    .education-logos {
+        flex-wrap: wrap;
+    }
+    
+    .edu-logo {
+        width: 80px;
+    }
+    
+    .edu-logo img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .edu-logo span {
+        font-size: 0.8rem;
+    }
+    
+    .feature-list li {
+        font-size: 0.85rem;
+        margin-bottom: 6px;
+    }
+    
+    /* Simplify certifications display */
+    .certifications-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .certification-item {
+        padding: 8px 5px;
+    }
+    
+    .cert-icon {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+    
+    .cert-name {
+        font-size: 0.8rem;
+    }
+    
+    /* Adjust client logos carousel */
+    .client-logos h3 {
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+    }
+    
+    .logo-item {
+        width: 80px;
+        height: 50px;
+    }
+    
+    /* Style CTA buttons */
+    .about-cta .cta-button {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Very small screens (up to 400px) */
+@media screen and (max-width: 400px) {
+    .profile-title h2 {
+        font-size: 1.4rem;
+    }
+    
+    .edu-logo {
+        width: 70px;
+    }
+    
+    .edu-logo img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .certification-item {
+        padding: 5px;
+    }
+    
+    .cert-icon {
+        font-size: 1.3rem;
+    }
+    
+    .cert-name {
+        font-size: 0.75rem;
+    }
+}
+
+/* Fix for tab display */
+@media screen and (max-width: 992px) {
+    /* Make tab content properly positioned */
+    .tab-content-container {
+        position: relative;
+        min-height: 300px; /* Adjust based on content */
+    }
+    
+    .tab-content {
+        position: absolute;
+        width: 100%;
+    }
+    
+    /* Make tabs more touch-friendly */
+    .tabs-nav {
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+/* Animation adjustment for smaller screens */
+@media screen and (max-width: 768px) {
+    @keyframes infiniteScroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-80px * 9)); } /* Adjusted for smaller logo size */
+    }
+}

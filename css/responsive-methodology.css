@@ -1,0 +1,246 @@
+/* Responsive styles for the Methodology section */
+
+/* Large screens adjustments (1200px and below) */
+@media screen and (max-width: 1200px) {
+    .methodology-section {
+        padding: 80px 0;
+    }
+    
+    .methodology-section .section-title {
+        font-size: 2.2rem;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .methodology-card .stage-title {
+        font-size: 1.4rem;
+    }
+    
+    .stage-description {
+        font-size: 0.95rem;
+    }
+    
+    .methodology-cta h3 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Medium screens - 3 columns (992px and below) */
+@media screen and (max-width: 992px) {
+    .methodology-section {
+        padding: 60px 0;
+    }
+    
+    .methodology-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .methodology-card {
+        min-height: 0;
+    }
+    
+    /* Make sure cards 1 & 2 are in first row, 3 & 4 in second row */
+    .methodology-card:nth-child(1), .methodology-card:nth-child(2) {
+        grid-row: 1;
+    }
+    
+    .methodology-card:nth-child(3), .methodology-card:nth-child(4) {
+        grid-row: 2;
+    }
+    
+    .cta-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .methodology-cta {
+        order: 1; /* Display Let's Talk Strategy section first */
+    }
+    
+    .know-more-btn {
+        order: 2; /* Display Know more about me button last */
+        align-self: center;
+    }
+    
+    .methodology-cta {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .methodology-cta h3 {
+        margin-bottom: 15px;
+    }
+}
+
+/* Tablets and small screens (768px and below) */
+@media screen and (max-width: 768px) {
+    .methodology-section {
+        padding: 50px 0;
+    }
+    
+    .methodology-section .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+    
+    .methodology-cards {
+        gap: 15px;
+    }
+    
+    .methodology-card .card-header {
+        padding: 20px 15px;
+    }
+    
+    .stage-number {
+        top: 10px;
+        left: 15px;
+        width: 25px;
+        height: 25px;
+        font-size: 0.9rem;
+    }
+    
+    .methodology-card .stage-title {
+        font-size: 1.2rem;
+        padding-top: 5px;
+    }
+    
+    .stage-icon {
+        font-size: 1.6rem;
+    }
+    
+    .icon-image {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .card-body {
+        padding: 20px;
+    }
+    
+    .stage-bullets li {
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+    }
+    
+    /* Adjust tooltip behavior for touch devices */
+    .bullet-tooltip {
+        position: relative;
+        padding: 8px;
+        margin-top: 5px;
+    }
+}
+
+/* Mobile (576px and below) - single column */
+@media screen and (max-width: 576px) {
+    .methodology-section {
+        padding: 40px 0;
+    }
+    
+    .methodology-section .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 25px;
+    }
+    
+    .methodology-cards {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* Ensure all cards are visible and in correct order */
+    .methodology-card {
+        margin-bottom: 15px;
+        opacity: 1 !important;
+        transform: none !important;
+        animation: none !important;
+    }
+    
+    /* Override any AOS animations which might be hiding elements */
+    [data-aos] {
+        opacity: 1 !important;
+        transform: none !important;
+        animation: none !important;
+    }
+    
+    .methodology-card .card-header {
+        padding: 15px;
+    }
+    
+    .methodology-card .stage-title {
+        font-size: 1.1rem;
+    }
+    
+    .card-body {
+        padding: 15px;
+    }
+    
+    .stage-description {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+    
+    /* Simplify bullets on very small screens */
+    .stage-bullets li {
+        margin-bottom: 8px;
+        font-size: 0.85rem;
+    }
+    
+    /* Convert expandable tooltips to simple display */
+    .expandable-bullet .bullet-tooltip {
+        display: block;
+        font-size: 0.8rem;
+        padding: 8px;
+        margin: 5px 0 10px 0;
+    }
+    
+    .methodology-cta {
+        padding: 15px;
+    }
+    
+    .methodology-cta h3 {
+        font-size: 1.1rem;
+    }
+    
+    .cta-container .cta-button {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Small height adjustments */
+@media screen and (max-height: 800px) {
+    .methodology-section {
+        padding: 40px 0;
+    }
+    
+    .methodology-card {
+        font-size: 0.9rem;
+    }
+    
+    .card-body {
+        padding: 15px;
+    }
+    
+    .methodology-card .stage-title {
+        font-size: 1.3rem;
+    }
+}
+
+/* Special case for smaller screens in landscape */
+@media screen and (max-height: 600px) {
+    .methodology-section {
+        padding: 30px 0;
+    }
+    
+    .methodology-section .section-title {
+        margin-bottom: 20px;
+    }
+    
+    .methodology-cards {
+        gap: 10px;
+    }
+}

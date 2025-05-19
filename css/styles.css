@@ -589,7 +589,7 @@ nav ul {
 /* Hero Section with Video Background */
 .hero {
     position: relative;
-    height: 100vh; /* Exact screen height */
+    min-height: 100vh; /* Exact screen height */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -634,7 +634,7 @@ nav ul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
+    min-height: 100vh;
     box-sizing: border-box;
 }
 
@@ -967,8 +967,8 @@ nav ul {
 
 .service-bubble {
     position: relative;
-    width: 100%;
-    aspect-ratio: 1/1;
+    width: 10vw;
+    height: 10vw;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(8px);

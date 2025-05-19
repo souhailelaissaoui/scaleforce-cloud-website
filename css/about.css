@@ -1,7 +1,7 @@
 /* Redesigned About Section with White Background */
 .about-section {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     background: white;
     color: #000;
     overflow: hidden;
